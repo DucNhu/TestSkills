@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Ajax</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        width: auto
+    }
+
+    main {
+        padding: 1rem
+    }
+
+    label {display: block}
+</style>
+
+<body>
+    <main>
+        <h2>Get Data</h2>
+        <form id="getFes">
+            <label for="getId"><b>Enter your id:</b></label>
+            <input type="number" class="form-group" id="getId" />
+        </form>
+        <h2>Post Data</h2>
+        <!-- Post -->
+        <form id="postFes">
+            <div>
+                <label for="getId">Enter your Name Category:</label>
+                <select id="listCategory">
+                  <option value="">Nothing</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Nav">Enter name Nav:</label>
+                <select id="NameNav">
+                  <option value="">Nothing</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Select Information Fes</legend>
+                <label for="idFes">id</label>
+                <input type="text" id="idFes">
+                <label for="NameFes">Name</label>
+                <input type="text" id="NameFes">
+                <label for="imgFes">image</label>
+                <input type="file" id="imgFes">
+                <label for="desFes">Description</label>
+                <textarea name="" id="desFes" cols="30" rows="10"></textarea>
+                <label for="priceFes">Price</label>
+                <input type="text" id="priceFes">
+                <label for="saleFes">Sale</label>
+                <input type="text" id="saleFes">
+                <label for="timeFFes">Time First</label>
+                <input type="text" id="timeFFes">
+                <label for="timeLFes">Time Last</label>
+                <input type="text" id="timeLFes">
+            </fieldset>
+            <input type="submit" value="Add" class="btn btn-success">
+        </form>
+
+        <div id="demo" class="row bg-white">
+        </div>
+    </main>
+
+</body>
+
+</html>
